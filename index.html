@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BOOTSTRAP 4-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--GENERAL STYLES-->
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Compilador Interprete</title>
+
+</head>
+
+<body class="">
+    <!--MAIN CONTAINER-->
+    <div class="container">
+        <!--HEADER CONTAINER-->
+        <header>
+            <div class="container row py-5">
+                <div class="col align-self-center Logo">
+                    <img src="imgs/EscudoUnimag.png" alt="Logo-Unimag">
+                </div>
+                <div class="col align-self-center">
+                    <h1 class="AudioWide TitleLogo text-white">PROYECTO COMPILADORES
+                    </h1>
+                </div>
+                <div class="col"></div>
+            </div>
+        </header>
+        
+        <nav>
+			<div class="nav nav-tabs" id="nav-tab" role="tablist">
+			  <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+			  <a class="nav-link" id="nav-C-tab" data-toggle="tab" href="#nav-C" role="tab" aria-controls="nav-C" aria-selected="false">Condicional</a>
+			  <a class="nav-link" id="nav-WF-tab" data-toggle="tab" href="#nav-WF" role="tab" aria-controls="nav-WF" aria-selected="false">Ciclos</a>
+			  <a class="nav-link" id="nav-if-tab" data-toggle="tab" href="#nav-if" role="tab" aria-controls="nav-if" aria-selected="false">Ejemplo If</a>
+			  <a class="nav-link" id="nav-F-tab" data-toggle="tab" href="#nav-F" role="tab" aria-controls="nav-F" aria-selected="false">Ejemplo FOR</a>
+			  <a class="nav-link" id="nav-W-tab" data-toggle="tab" href="#nav-W" role="tab" aria-controls="nav-W" aria-selected="false">Ejemplo WHILE</a>
+			 
+			</div>
+		  </nav>
+		  <div class="tab-content" id="nav-tabContent">
+			<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <h5>   <b><br><pre>	                     Todas las sentencias deben ser escritas en minúsculas</pre></b>  </h5>						   	
+
+			</div>
+			<div class="tab-pane fade" id="nav-C" role="tabpanel" aria-labelledby="nav-C-tab">																
+				<b>
+  	<pre>
+	   IF      ==> ssi
+	   PRINT   ==> mostrar										    
+	   ELSE    ==> s_n
+
+  </pre>
+			</b>
+
+		</div>
+			<div class="tab-pane fade" id="nav-WF" role="tabpanel" aria-labelledby="nav-WF-tab">
+				
+				<b>
+					<pre>
+			FOR    ==>cuando
+			TO     ==>limite
+			WHILE  ==>hacer 
+					
+				</pre>
+						  </b>
+				
+			</div>
+			<div class="tab-pane fade" id="nav-if" role="tabpanel" aria-labelledby="nav-if-tab">
+			<b>
+				<pre>
+                                  var  y:=1
+                                  ssi : y<10_&&_ a := verdad : (
+                                      
+                                       mostrar >> "correcto"
+                                  )s_n(
+                                      mostrar >> "error"
+                                  )
+				</pre>
+				 </b>
+
+			</div>
+			<div class="tab-pane fade" id="nav-F" role="tabpanel" aria-labelledby="nav-F-tab">
+			<b>
+                <pre>
+                                               cuando : i:=0  limite i<10 _ i++ :(
+                                                mostrar>>"hola"
+                                               )
+
+				</pre> 
+            </b>
+
+			</div>
+			<div class="tab-pane fade" id="nav-W" role="tabpanel" aria-labelledby="nav-W-tab">
+				<b>
+					<pre>
+                                                              hacer : i>10 _ && _ i <= 20 : (
+                                                                mostrar>>"hola"
+                                                              )
+					</pre>
+				</b>
+
+			</div>
+		  </div>
+        <!--MACHINE CONTAINER-->
+        <div class="card text-center">
+            <div class="card-header h3">
+                Código
+            </div>
+            <div class="" style="margin: 0px;">
+                <div id="editor">
+
+</div>
+                <!--<textarea id="editor" class="form-control" rows="1" style="margin: 0px; min-width: 100%"></textarea>-->
+            </div>
+            <div class="card-footer text-muted">
+                <div class="row">
+                    <div class="col">
+                        <button id="btnp" type="button" class="btn btn-primary" onclick="plus();"><i class="fas fa-plus"></i></button>
+                        <button id="btnp" type="button" class="btn btn-primary" onclick="minus();"><i class="fas fa-minus"></i></button>
+                    </div>
+                    <div class="col">
+                        <div class="btn-group control-buttons" role="group" aria-label="Basic example">
+                            <button id="validar" type="button" class="btn btn-success">Validar</button>
+                          <!---  <button id="btnp" type="button" disabled="false" class="btn btn-primary" onclick="">Ejecutar</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <!--FOOTER-->
+    <footer class="container py-5 mt-5 text-center">
+        <div class="container border-top border-white py-3">
+            <p class="m-0 text-white"></p>
+                Copyright &copy;2021 All rights reserved
+            </p>
+        </div>
+    </footer>
+
+    <!--SCRIPTS-->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://kit.fontawesome.com/cfb5377838.js" crossorigin="anonymous"></script>
+    <script>
+        src = "https://cdn.jsdelivr.net/npm/@glidejs/glide"
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js.map"></script>
+
+    <script src="js/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/editcodeinit.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/parser.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

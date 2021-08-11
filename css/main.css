@@ -1,0 +1,57 @@
+/*General*/
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:#7c7bde;
+}
+header{
+    background-color: #122953;
+}
+
+@font-face {
+    font-family: 'AudioWide';
+    src: url(../fonts/Audiowide-Regular.ttf);
+}
+
+.AudioWide {
+    font-family: 'AudioWide';
+}
+
+.Logo, img {
+    width: 150px;
+}
+
+
+.TitleLogo {
+    font-size: 50px;
+}
+.card-body {
+    padding: 0;
+}
+.card{
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+#editor { 
+    position: relative;
+    width: auto;
+    height: 400px;
+    font-size: 20px;
+}
+a{
+    color: white;
+}
+pre{
+    color: black;
+}
+nav{
+    background-color: #000011;
+    
+  }
+  nav a:hover{
+    color: black;
+    background-color: white;
+  }
